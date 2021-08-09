@@ -1,0 +1,211 @@
+body{
+    padding: 60px 0 0 0;
+}
+
+section{
+    padding: 60px 0;
+}
+
+/*----------------- navbar ----------------*/
+.navbar, .navbar-brand, .navbar li{
+    transition: .5s;
+}
+.navbar2{
+    box-shadow: 0px -5px 11px 1px #4c4040;
+}
+.navbar a:hover{
+    color:black !important;
+}
+/*----------------- menuhambu -------------*/
+.hamburguer {
+    position: relative;
+    display: inline-block;
+    background: #000;
+    width: 30px;
+    height: 2px;
+    transition: 0.5s ease-in-out;
+    box-sizing:content-box;
+    cursor: pointer;
+}
+.menuEsp{
+    cursor: pointer;
+    box-sizing: content-box;
+}
+.navbar-toogle{
+    box-sizing: border-box;
+}
+.hamburguer:before,
+.hamburguer:after {
+    background: #000;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: 0.5s ease-in-out;
+}
+.hamburguer:before {
+    top: -10px;
+}
+.hamburguer:after {
+    bottom: -10px;
+}
+input {
+    display: none;
+}
+input:checked ~ label .hamburguer {
+    transform: rotate(45deg);
+}
+input:checked ~ label .hamburguer:before {
+    transform: rotate(90deg);
+    top: 0;
+}
+input:checked ~ label .hamburguer:after {
+    transform: rotate(90deg);
+    bottom: 0;
+}
+@media (min-width: 992px) {
+    .navbar-toogle{
+        display: none;
+    }
+}
+/*----------------- menuhambu -------------*/
+
+/*----------------- navbar ----------------*/
+
+/*----------------- blog -----------------*/
+.card{
+    margin-bottom: 15px;
+    border-radius: 0, 5px, 5px, 0 !important;
+}
+.card-img-top{
+    border-radius: 0;
+}
+.card-title{
+    color: #005cad;
+}
+h1{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.card-title{
+    font-size: 24px;
+}
+.data{
+    margin: auto 0;
+    font-size: 14px;
+    color: #6c757d;
+}
+.blog{
+    background-color: #f8f9fa;
+}
+.card,
+.card img,
+.mapa{
+    transition: .3s;
+}
+.card:hover,
+.card:focus,
+.mapa:hover,
+.mapa:focus,
+.accordion:hover,
+.accordion:focus{
+    border-color: #005CAD;
+    box-shadow: 0 0 30px -5px var(--card-shadow);
+    transform: translateY(-10px) !important;
+    transform: scale(1.05) !important;
+}
+/*----------------- blog -----------------*/
+/*----------------- acordion -----------------*/
+.accordion{
+    width: 50rem;
+    margin: 0 auto;
+}
+/*----------------- acordion -----------------*/
+
+/*----------------- contact -----------------*/
+.contato input{
+    margin-bottom: 1.5rem;
+}
+.contato .btn-primary {
+    margin-top: 30px;
+}
+/*----------------- contact -----------------*/
+
+/*----------------- footer ---------------*/
+footer{
+    background: #f8f9fa;
+}
+footer i{
+    color: #0d6efd;
+    padding: 0 7px 0 7px;
+    font-size: 17px;
+}
+footer p{
+    color: #6c757d;
+    font-size: 16px;
+}
+.senai{
+    background: #ebeced;
+    padding-top: 25px;
+    padding-bottom: 10px;
+}
+footer a{
+    color: #6c757d;
+}
+.silver i{
+    color: #6c757d;
+}
+.silver b{
+    color: #6c757d;
+}
+.rs{
+    padding-top: 20px;
+}
+#mapa i{
+       color: #6c757d;
+    }
+#mapa a{
+    color: #0d6efd;
+    }
+#mapa iframe{
+    width: 100%;
+    height: 90%;
+}
+.silver h5{
+    color: #6c757d !important;
+}
+#mapa{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+footer .redes a i:hover{
+    color:#0B5ED7;
+}
+.senai a:hover{
+    color:#6c757d;
+}
+/*----------------- footer ---------------*/
+
+/*----------------- animation -------------*/
+[data-anime]{
+    opacity: 0;
+    transition: .5s;
+}
+[data-anime="left"]{
+    transform: translate3d(-50px, 0, 0);
+}
+[data-anime="right"]{
+    transform: translate3d(50px, 0, 0);
+}
+[data-anime="top"]{
+    transform: translate3d(0, -50px, 0);
+}
+[data-anime="bottom"]{
+    transform: translate3d(0, 50px, 0);
+}
+[data-anime].animate{
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+}
+/*----------------- animation -------------*/
